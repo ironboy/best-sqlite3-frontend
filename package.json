@@ -1,6 +1,6 @@
 {
   "name": "best-sqlite3-frontend",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An adaptor that lets you run best-sqlite3 on the frontend. For learning purposes, not production.",
   "main": "index.js",
   "scripts": {

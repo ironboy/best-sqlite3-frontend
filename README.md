@@ -19,7 +19,9 @@ npm i best-sqlite-frontend
 ```
 
 ### Add an index.js file
-Add an inde.js file to your project. It will contain your backend/server code:
+Add an index.js file to your project. It will contain your backend/server code:
+
+#### index.js
 
 ```js
 require('best-sqlite3-frontend')({
@@ -42,7 +44,7 @@ require('best-sqlite3-frontend')({
 ```
 You can change these settings if you want to:
 * **databasePath**: Where your SQLite database file is located.
-* **addDatabaseFunctions**: You don't have to add any database functions. But the ones you add can be used in your database queries. In our example we add functions for converting text to uppper- and lowercase, since JavaScript is better at doing this with letters that are not a-z (like åäö in the Sweidsh alphabet).
+* **addDatabaseFunctions**: You don't have to add any database functions. But the ones you add can be used in your database queries. In our example we add functions (UP and LOW) for converting text to uppper- and lowercase, since JavaScript is better at doing this with letters that are not a-z (like åäö in the Swedish alphabet) than the build in functions UPPER and LOWER in SQLite are.
 * **port** - which port the web server will run on.
 * **staticFolder** - the folder that contains files you want to serve (html, css, images, js etc)
 
